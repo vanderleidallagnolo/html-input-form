@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Formulários</h1>
+    <hr>
+    <form method="post">
+        <p>
+            <label for="txtNomeCompleto"">Nome Completo</label><br>
+         <input type=" text" name="nomeCompleto" id="txtNomeCompleto" placeholder="nome completo">
+        </p>
+        <p>
+            <label for="txtEmail">E-mail</label><br>
+            <input type="text" name="Email" id="txtEmail" placeholder="email">
+        </p>
+        <fieldset>
+
+            <legend>Cargo Pretendido</legend>
+            <input type="radio" name="Cargo" id="rdProgramador" value="P">
+            <label for="rdProgramador">Programador</label><br>
+            <input type="radio" name="Cargo" id="rdWebDesigner" value="W">
+            <label for="rdWebDesigner">Web Designer</label><br>
+            </p>
+        </fieldset>
+        <p>
+            <input type="checkbox" name="Aceito" id="chkAceito">
+            <label for="chkAceito">Aceito os termos de uso</label>
+        </p>
+        <p>
+            <label for="slctEstado">Estado</label><br>
+            <select name="Estado" id="slctEstado">
+                <optgroup label="Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="RO">Rondônia</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="CE" selected>Ceará</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="slctLinguagens">Linguagens de Programação</label><br>
+            <select name="linguagens" name="slctLinguagens" size="6" multiple> 
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+
+            </select>
+        </p>
+        <p>
+            <label for="txtCidade">Cidade</label>
+            <input type="text" name="cidade" id="txtCidade" list="cidades">
+            <datalist id="cidades">
+
+                <option value="Manaus">Manaus</option>
+                <option value="Porto Velho">Porto Velho</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Vitória">Vitória</option>
+                <option value="Salvador">Salvador</option>
+                <option value="Fortaleza">Fortaleza</option>
+                <option value="Curitiba">Curitiba</option>
+                <option value="Florianópolis">Florianópolis</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="txtCurriculo">Currículo</label><br>
+            <textarea name="Curriculo" id="txtCurriculo" cols="30" rows="10" ></textarea>
+        </p>
+        <p>
+            <input type="reset" value="Limpar" >
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+</body>
+
+</html>

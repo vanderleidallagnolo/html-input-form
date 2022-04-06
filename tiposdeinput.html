@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Inputs</title>
+</head>
+
+<body>
+    <h1>Tipos de Inputs</h1>
+    <hr>
+    <form method="post">
+        <p>
+            Text <input type="text"><br>
+            Text - readonly <input type="text" readonly value="texto qualquer"><br>
+            Text - disabbled <input type="text" disabled value="text qualquer"> <br>
+            Text - size = 60<input type="text" size="60"> <br>
+            Text - size = 60 - maxlength = 20<input type="text" size="60" maxlength="20"> <br>
+            Text - size = 60 - maxlength = 20 - required <input type="text" size="60" maxlength="20" required> <br>
+            Text - size = 60 - maxlength = 20 - required - autofocus<input type="text" size="60" maxlength="20" required
+                autofocus> <br>
+        </p>
+        <p>
+            Text - size = 60 - maxlength = 20 - required
+            <input type="text" size="60" maxlength="20" required name="campo2" id="campo2"> <br>
+            Text - size = 60 - maxlength = 20 - required - autocomplete=on
+            <input type="text" size="60" maxlength="20" required name="campo2" id="campo2" autocomplete="on"><br>
+
+        </p>
+        <p>
+            Text - size = 60 - maxlength = 20 - required - autofocus - datalista = minhalista - placeholder="Digite aqui
+            o seu nomme"
+            <input type="text" size="60" maxlength="20" required name="campo3" id="campo3" autofocus list="minhalista"
+                placeholder="Digite aqui o seu nomme">
+            <br>
+            <datalist id="minhalista">
+                <option value="Valor 1">
+                <option value="Valor 2">
+                <option value="Valor 4">
+            </datalist>
+
+        </p>
+        <p>
+            Text - pattern = "[A-Z]{3}-[0-9]{4}" (expressão regular de placa de carro - modelo antigo
+            <input type="text" pattern="[A-Z]{3}-[0-9]{4}">
+            <br>
+            Text - pattern = "[0-9]{2} [0-9]{5}-[0-9]{4}" (expressão regular para número de telefone celular -
+            placeholder="(99) 99999-9999"
+            <input type="text" pattern="[A-Z]{3}-[0-9]{4}" placeholder="(99) 99999-9999">
+            <br>
+
+        </p>
+        <p>
+            Text - password
+            <input type="password">
+            <br>
+        </p>
+        <p>
+            Radio<br>
+            <input type="radio" name="Estadocivil" value="C" disabled>Casado<br>
+            <input type="radio" name="Estadocivil" value="S" required>Solteiro<br>
+            <input type="radio" name="Estadocivil" value="O">Outro<br>
+            <br>
+        </p>
+        <p>
+            Checkbox<br>
+            <input type="checkbox" name="noticias" value="noticias" disabled>Notícias<br>
+            <input type="checkbox" name="noticias" value="noticias" required>Promoções<br>
+            <input type="checkbox" name="alertas" value="alertas">Alertas<br>
+            <br>
+        </p>
+        <p>
+            Color<br>
+            <input type="color"><br>
+        </p>
+        <p>
+            Date<br>
+            <input type="date"><br>
+            Date - min="1079-07-01" - max="1980-05-20"<br>
+            <input type="date" min="1979-07-01" max="1980-05-20"><br>
+            Datetime-local
+            <br>
+            <input type="datetime-local"><br>
+            Datetime-local min="1979-07-01T00:00:00" max="1980-05-20T17:00:00"
+            <br>
+            <input type="date" min="1979-07-01T00:00:00" max="1980-05-20T17:00:00"><br>
+        </p>
+        <p>
+            E-mail<br>
+            <input type="email"><br>
+        </p>
+        <p>
+            File<br>
+            <input type="file"><br>
+        </p>
+        <p>
+            Hidden<br>
+            <input type="hidden"><br>
+        </p>
+        <p>
+            Month<br>
+            <input type="month"><br>
+        </p>
+        <p>
+            Number<br>
+            <input type="number"><br>
+            Number min="100" max="100" step="50"<br>
+            <input type="number" min="100" max="1000" step="50"><br>
+        </p>
+        <p>
+            Range<br>
+            <input type="range"><br>
+            range min="100" max="100" step="100"<br>
+            <input type="range" min="100" max="1000" step="100"><br>
+        </p>
+        <p>
+            Search<br>
+            <input type="search" name="termo"><br>
+        </p>
+        <p>
+            Tel -(telefone)<br>
+            <input type="tel" name="telefone"><br>
+        </p>
+        <p>
+            Time<br>
+            <input type="time" name="horamarcada"><br>
+        </p>
+        <p>
+            URL<br>
+            <input type="url" name="enderecosite"><br>
+        </p>
+        <p>
+            WEEK<br>
+            <input type="week" name="semana"><br>
+        </p>
+        <p>
+            Button
+            <input type="button" value="Botão" onclick="alert('MENSAGEM');"><br>
+            Button - SUBMIT via javascript
+            <input type="button" value="Botão - submit" onclick="this.form.submit();"><br>
+        </p>
+        <p>
+            Submit
+            <input type="submit" value="Enviar"><br>
+            Reset
+            <input type="reset" value="Limpar">
+            <br>
+        </p>
+    </form>
+
+</body>
+
+</html>
